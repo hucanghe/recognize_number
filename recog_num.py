@@ -7,12 +7,11 @@ Usage:
 from __future__ import annotations
 import argparse
 from pathlib import Path
-
+import matplotlib.pyplot as plt
 import torch
 from torch import Tensor, nn
 
 from mnist_from_photo import MnistSample, jpeg_to_mnist, save_preview
-import matplotlib.pyplot as plt
 
 class MnistModel(nn.Module):
 	def __init__(self) -> None:
