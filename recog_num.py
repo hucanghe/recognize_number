@@ -34,6 +34,7 @@ def show_preview(sample: MnistSample) -> None:
 	plt.axis("off")
 	plt.show()
 
+
 def predict(sample: MnistSample, weights_path: Path) -> tuple[int, Tensor]:
 	model = MnistModel()
 	state = torch.load(weights_path, map_location="cpu", weights_only=True)
